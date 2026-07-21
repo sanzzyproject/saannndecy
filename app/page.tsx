@@ -31,61 +31,56 @@ export default function Home() {
         </p>
 
         {/* Links / Actions (Linktree style) */}
-        <div className="w-full space-y-4 mb-14">
+        <div className="flex flex-wrap justify-center gap-3 w-full mb-14">
           <a 
             href="https://whatsapp.com/channel/0029Vb6ukqnHQbS4mKP0j80L"
             target="_blank" 
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-3 w-full p-4 rounded-xl bg-[#238636] text-white hover:bg-[#2ea043] transition-colors border border-[rgba(240,246,252,0.1)] shadow-sm font-medium"
+            className="flex items-center justify-center gap-2 px-4 py-1.5 rounded-md bg-[#21262d] text-[#c9d1d9] hover:bg-[#30363d] transition-all border border-[#363b42] hover:border-[#8b949e] shadow-sm text-sm font-medium"
           >
-            <MessageCircle className="w-5 h-5" />
-            Developer Channel (WhatsApp)
+            <MessageCircle className="w-4 h-4" />
+            WhatsApp
           </a>
 
           <a 
             href="https://t.me/sannnforums"
             target="_blank" 
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-3 w-full p-4 rounded-xl bg-[#21262d] text-[#c9d1d9] hover:bg-[#30363d] transition-colors border border-[#30363d] shadow-sm font-medium"
+            className="flex items-center justify-center gap-2 px-4 py-1.5 rounded-md bg-[#21262d] text-[#c9d1d9] hover:bg-[#30363d] transition-all border border-[#363b42] hover:border-[#8b949e] shadow-sm text-sm font-medium"
           >
-            <TelegramIcon className="w-5 h-5" />
-            Join Telegram Channel
+            <TelegramIcon className="w-4 h-4" />
+            Telegram
           </a>
 
           <a 
             href="https://www.tiktok.com/@sannforums"
             target="_blank" 
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-3 w-full p-4 rounded-xl bg-[#21262d] text-[#c9d1d9] hover:bg-[#30363d] transition-colors border border-[#30363d] shadow-sm font-medium"
+            className="flex items-center justify-center gap-2 px-4 py-1.5 rounded-md bg-[#21262d] text-[#c9d1d9] hover:bg-[#30363d] transition-all border border-[#363b42] hover:border-[#8b949e] shadow-sm text-sm font-medium"
           >
-            <TikTokIcon className="w-5 h-5" />
-            Follow on TikTok
+            <TikTokIcon className="w-4 h-4" />
+            TikTok
           </a>
 
           <a 
             href="https://github.com/sannnproject"
             target="_blank" 
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-3 w-full p-4 rounded-xl bg-[#21262d] text-[#c9d1d9] hover:bg-[#30363d] transition-colors border border-[#30363d] shadow-sm font-medium"
+            className="flex items-center justify-center gap-2 px-4 py-1.5 rounded-md bg-[#21262d] text-[#c9d1d9] hover:bg-[#30363d] transition-all border border-[#363b42] hover:border-[#8b949e] shadow-sm text-sm font-medium"
           >
-            <Github className="w-5 h-5" />
-            Explore Projects on GitHub
+            <Github className="w-4 h-4" />
+            GitHub
           </a>
-        </div>
 
-        {/* Most Used Stack */}
-        <div className="w-full mb-24">
-          <h2 className="text-lg font-semibold text-white mb-6 text-center border-b border-[#21262d] pb-4">
-            Most Used Stack
-          </h2>
-          <div className="flex flex-wrap justify-center gap-3">
-            <StatBadge logo="https://cdn.simpleicons.org/nextdotjs/ffffff" name="Next.js" percent="85%" bg="#000000" />
-            <StatBadge logo="https://cdn.simpleicons.org/tailwindcss/38B2AC" name="Tailwind CSS" percent="78%" bg="#38B2AC" text="#000000" />
-            <StatBadge logo="https://cdn.simpleicons.org/react/61DAFB" name="React" percent="75%" bg="#61DAFB" text="#000000" />
-            <StatBadge logo="https://cdn.simpleicons.org/nodedotjs/339933" name="Node.js" percent="50%" bg="#339933" />
-            <StatBadge logo="https://cdn.simpleicons.org/python/3776AB" name="Python" percent="20%" bg="#3776AB" />
-            <StatBadge logo="https://cdn.simpleicons.org/fastapi/009688" name="FastAPI" percent="15%" bg="#009688" />
-          </div>
+          <a 
+            href="https://lynk.id/sannnx"
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 px-4 py-1.5 rounded-md bg-[#21262d] text-[#c9d1d9] hover:bg-[#30363d] transition-all border border-[#363b42] hover:border-[#8b949e] shadow-sm text-sm font-medium"
+          >
+            <img src="https://www.google.com/s2/favicons?domain=lynk.id&sz=32" alt="Lynk.id" className="w-4 h-4 rounded-sm" />
+            Source Code
+          </a>
         </div>
 
         {/* Tech Stack */}
@@ -126,6 +121,7 @@ export default function Home() {
             <div className="bg-[#161b22] border border-[#30363d] rounded-xl p-5 shadow-sm">
               <h3 className="text-xs font-semibold text-[#8b949e] uppercase tracking-wider mb-4">Database & Services</h3>
               <div className="flex flex-wrap gap-2">
+                <TechBadge src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
                 <TechBadge src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" />
                 <TechBadge src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
                 <TechBadge src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
