@@ -1,4 +1,4 @@
-import { Github, MessageCircle } from "lucide-react";
+import { Github, MessageCircle, Code } from "lucide-react";
 
 export default function Home() {
   return (
@@ -80,6 +80,16 @@ export default function Home() {
           >
             <img src="https://www.google.com/s2/favicons?domain=lynk.id&sz=32" alt="Lynk.id" className="w-4 h-4 rounded-sm" />
             Source Code
+          </a>
+
+          <a 
+            href="https://tempel.in/view/u2aQkq"
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 px-4 py-1.5 rounded-md bg-[#21262d] text-[#c9d1d9] hover:bg-[#30363d] transition-all border border-[#363b42] hover:border-[#8b949e] shadow-sm text-sm font-medium"
+          >
+            <Code className="w-4 h-4" />
+            Archive Projects
           </a>
         </div>
 
